@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import LM Sport | Camisetas de Fútbol Premium — Calidad 1:1, AAA y Sublimada</title>
+  <meta name="description" content="Camisetas de fútbol del Mundial y clubes europeos. Calidad 1:1, AAA y Sublimada. Envíos a todo el Ecuador. WhatsApp: 0963647238 — Import LM Sport">
+  <meta name="keywords" content="camisetas, fútbol, mundial, 1:1, AAA, sublimada, Ecuador, Real Madrid, Barcelona, PSG, selecciones, Import LM Sport">
+  <meta name="theme-color" content="#10B981">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta property="og:title" content="Import LM Sport | Camisetas de Fútbol Premium">
+  <meta property="og:description" content="Las mejores camisetas de fútbol. Calidad 1:1, AAA y Sublimada. Envíos a todo Ecuador.">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/images/icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050a05;
+      --bg2: #0c1a10;
+      --bg3: #0d140d;
+      --accent: #10B981;
+      --accent-hover: #34d399;
+      --accent-dark: #059669;
+      --accent-glow: rgba(16,185,129,0.4);
+      --gold: #fbbf24;
+      --amber: #f59e0b;
+      --blue: #3b82f6;
+      --text: #f0fdf4;
+      --text2: #b8d4c8;
+      --text3: #7da693;
+      --border: rgba(16,185,129,0.2);
+      --glass: rgba(16,185,129,0.06);
+      --glass-border: rgba(16,185,129,0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* PRELOADER */
+    #preloader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    #preloader.hide { opacity: 0; visibility: hidden; }
+    .loader-ring {
+      width: 56px; height: 56px;
+      border: 3px solid var(--bg2);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* NAVBAR */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 0 24px; height: 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(10,15,10,0.8);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(10,15,10,0.95);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700; font-size: 20px; color: #fff;
+    }
+    .nav-logo-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px; font-weight: 700;
+      color: var(--text);
+      letter-spacing: 1px;
+    }
+    .nav-logo-text span { color: var(--accent); }
+    .nav-links {
+      display: flex; align-items: center; gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text2); text-decoration: none;
+      font-size: 14px; font-weight: 500;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a::after {
+      content: ''; position: absolute;
+      bottom: -4px; left: 0; width: 0; height: 2px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--accent) !important;
+      color: #000 !important;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-weight: 600 !important;
+      transition: all 0.3s ease !important;
+    }
+    .nav-cta:hover { background: var(--accent-hover) !important; transform: translateY(-1px); }
+    .nav-cta::after { display: none !important; }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .nav-hamburger span {
+      width: 24px; height: 2px; background: var(--text);
+      transition: all 0.3s ease; border-radius: 2px;
+    }
+    .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .mobile-menu {
+      display: none;
+      position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+      background: rgba(10,15,10,0.98);
+      backdrop-filter: blur(20px);
+      flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+      z-index: 999;
+    }
+    .mobile-menu.active { display: flex; }
+    .mobile-menu a {
+      color: var(--text); text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px; font-weight: 600;
+      letter-spacing: 2px;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu a:hover { color: var(--accent); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 100px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-glow {
+      position: absolute; top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+      pointer-events: none;
+      animation: pulse-glow 4s ease-in-out infinite;
+    }
+    .hero-bg-glow2 {
+      position: absolute; bottom: -100px; left: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(16,185,129,0.15), transparent 70%);
+      pointer-events: none;
+      animation: pulse-glow 5s ease-in-out infinite 1s;
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+    .hero-container {
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 6px 16px; border-radius: 50px;
+      font-size: 13px; color: var(--accent);
+      font-weight: 500; margin-bottom: 20px;
+    }
+    .hero-badge-dot {
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: blink 1.5s ease-in-out infinite;
+    }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+    .hero-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    .hero-title .accent { color: var(--accent); }
+    .hero-title .gold { color: var(--gold); }
+    .hero-subtitle {
+      font-size: 18px; color: var(--text2);
+      line-height: 1.7; margin-bottom: 32px;
+      max-width: 500px;
+    }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent);
+      color: #000; padding: 14px 32px;
+      border-radius: 12px; font-weight: 700;
+      font-size: 16px; text-decoration: none;
+      transition: all 0.3s ease;
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-glow); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent); padding: 12px 28px;
+      border-radius: 12px; font-weight: 600;
+      font-size: 16px; text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-secondary:hover { background: var(--glass); transform: translateY(-2px); }
+    .hero-stats {
+      display: flex; gap: 32px; margin-top: 40px;
+    }
+    .hero-stat { text-align: left; }
+    .hero-stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px; font-weight: 700; color: var(--accent);
+    }
+    .hero-stat-label { font-size: 13px; color: var(--text3); margin-top: 2px; }
+    .hero-image {
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .hero-jersey-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .hero-jersey-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+    .hero-jersey-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 8px 30px rgba(16,185,129,0.15);
+    }
+    .hero-jersey-card img {
+      width: 100%; height: 140px; object-fit: cover;
+      display: block;
+    }
+    .hero-jersey-card p {
+      padding: 8px 12px;
+      font-size: 12px; font-weight: 600;
+      text-align: center;
+      color: var(--text2);
+    }
+
+    /* SECTION SHARED */
+    .section {
+      padding: 100px 24px;
+      position: relative;
+    }
+    .section-container {
+      max-width: 1200px; margin: 0 auto;
+    }
+    .section-header {
+      text-align: center; margin-bottom: 60px;
+    }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--accent); font-size: 13px;
+      font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    .section-label::before, .section-label::after {
+      content: ''; width: 30px; height: 1px; background: var(--accent);
+    }
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700; line-height: 1.1;
+    }
+    .section-title .accent { color: var(--accent); }
+    .section-desc {
+      color: var(--text2); font-size: 16px;
+      max-width: 600px; margin: 16px auto 0;
+      line-height: 1.7;
+    }
+
+    /* SCROLL REVEAL */
+    .reveal {
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1; transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* MUNDIAL SECTION */
+    .mundial-section {
+      padding: 80px 24px 100px;
+      position: relative;
+      background: radial-gradient(ellipse at top, rgba(16,185,129,0.08), transparent 60%), var(--bg);
+      overflow: hidden;
+    }
+    .mundial-section::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(16,185,129,0.15), transparent 70%);
+      pointer-events: none;
+      animation: pulse-glow 5s ease-in-out infinite;
+    }
+    .mundial-container {
+      max-width: 1200px; margin: 0 auto;
+      position: relative; z-index: 1;
+    }
+    .mundial-header {
+      text-align: center; margin-bottom: 50px;
+    }
+    .mundial-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: #000; padding: 8px 24px;
+      border-radius: 50px; font-weight: 700;
+      font-size: 13px; letter-spacing: 1px;
+      margin-bottom: 20px; text-transform: uppercase;
+      box-shadow: 0 4px 20px rgba(16,185,129,0.4);
+      animation: badge-pulse 2s ease-in-out infinite;
+    }
+    @keyframes badge-pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(16,185,129,0.4); }
+      50% { box-shadow: 0 4px 40px rgba(16,185,129,0.8); }
+    }
+    .mundial-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700; line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .mundial-title .accent { color: var(--accent); }
+    .mundial-subtitle {
+      color: var(--text2); font-size: 17px;
+      line-height: 1.7; max-width: 600px;
+      margin: 0 auto;
+    }
+    .mundial-flag-emoji {
+      display: inline-block;
+      animation: flag-wave 2s ease-in-out infinite;
+      transform-origin: 0% 50%;
+    }
+    @keyframes flag-wave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-8deg); }
+    }
+    .mundial-matches {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .match-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      position: relative;
+      display: flex; flex-direction: column;
+    }
+    .match-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 50px rgba(16,185,129,0.18);
+    }
+    .match-card.today {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, rgba(16,185,129,0.1), var(--bg2));
+    }
+    .match-today-badge {
+      position: absolute; top: 0; left: 0; right: 0;
+      background: var(--accent);
+      color: #000; font-size: 12px;
+      font-weight: 800; text-align: center;
+      padding: 6px; letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: today-flash 1.5s ease-in-out infinite;
+    }
+    @keyframes today-flash {
+      0%, 100% { background: var(--accent); }
+      50% { background: var(--accent-hover); }
+    }
+    .match-date {
+      padding: 24px 20px 0;
+      display: flex; align-items: center; gap: 8px;
+      color: var(--accent); font-weight: 700;
+      font-size: 14px; letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .match-card.today .match-date { padding-top: 44px; }
+    .match-teams {
+      padding: 8px 20px 16px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px; font-weight: 600;
+      line-height: 1.3;
+    }
+    .match-vs {
+      color: var(--text3); font-size: 14px;
+      font-weight: 400; margin: 0 8px;
+    }
+    .match-ecuador { color: var(--accent); }
+    .match-info {
+      padding: 0 20px 16px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .match-info-row {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--text2); font-size: 14px;
+    }
+    .match-info-row svg {
+      width: 16px; height: 16px;
+      flex-shrink: 0; color: var(--accent);
+    }
+    .match-cta {
+      margin: auto 20px 20px;
+      background: var(--accent);
+      color: #000;
+      padding: 12px;
+      border-radius: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700; font-size: 14px;
+      transition: all 0.3s ease;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .match-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(16,185,129,0.4);
+    }
+    .match-cta svg { width: 18px; height: 18px; }
+    .mundial-cta-bottom {
+      text-align: center; margin-top: 40px;
+    }
+    .mundial-cta-bottom p {
+      color: var(--text2); font-size: 15px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 900px) {
+      .mundial-matches { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+    }
+
+    /* CALIDADES / TIERS */
+    .tiers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .tier-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    .tier-card::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+    .tier-card:hover::before { transform: scaleX(1); }
+    .tier-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(16,185,129,0.12);
+    }
+    .tier-card.featured {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, rgba(16,185,129,0.08), var(--bg2));
+    }
+    .tier-card.featured::before { transform: scaleX(1); }
+    .tier-badge {
+      position: absolute; top: 16px; right: 16px;
+      background: var(--accent);
+      color: #000; font-size: 11px;
+      font-weight: 700; padding: 4px 12px;
+      border-radius: 50px; letter-spacing: 0.5px;
+    }
+    .tier-icon {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; margin-bottom: 20px;
+    }
+    .tier-icon.gold { background: rgba(245,158,11,0.15); }
+    .tier-icon.silver { background: rgba(16,185,129,0.15); }
+    .tier-icon.bronze { background: rgba(59,130,246,0.15); }
+    .tier-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px; font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .tier-tagline {
+      color: var(--accent); font-size: 14px;
+      font-weight: 600; margin-bottom: 16px;
+    }
+    .tier-desc {
+      color: var(--text2); font-size: 14px;
+      line-height: 1.7; margin-bottom: 20px;
+    }
+    .tier-features {
+      list-style: none; margin-bottom: 24px;
+    }
+    .tier-features li {
+      color: var(--text2); font-size: 14px;
+      padding: 6px 0;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .tier-features li::before {
+      content: '✓'; color: var(--accent);
+      font-weight: 700; font-size: 14px;
+    }
+    .tier-price {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px; color: var(--text3);
+      margin-bottom: 20px;
+    }
+    .tier-price strong {
+      color: var(--accent); font-size: 24px;
+    }
+
+    /* SELECCIONES */
+    .teams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .team-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .team-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(16,185,129,0.12);
+    }
+    .team-card-img {
+      width: 100%; height: 180px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .team-card:hover .team-card-img { transform: scale(1.05); }
+    .team-card-body {
+      padding: 16px;
+    }
+    .team-card-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px; font-weight: 600;
+    }
+    .team-card-type {
+      font-size: 12px; color: var(--accent);
+      font-weight: 500; margin-top: 4px;
+    }
+
+    /* CLUBES */
+    .clubs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .club-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .club-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 50px rgba(16,185,129,0.12);
+    }
+    .club-card-img {
+      width: 100%; height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .club-card:hover .club-card-img { transform: scale(1.05); }
+    .club-card-body {
+      padding: 20px;
+    }
+    .club-card-league {
+      font-size: 11px; color: var(--accent);
+      font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .club-card-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px; font-weight: 600;
+    }
+
+    /* OLIMPIADAS */
+    .olympiad-section {
+      background: linear-gradient(180deg, var(--bg), var(--bg2), var(--bg));
+    }
+    .olympiad-card {
+      max-width: 800px; margin: 0 auto;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .olympiad-card::before {
+      content: ''; position: absolute;
+      top: -50%; left: -50%; width: 200%; height: 200%;
+      background: conic-gradient(from 0deg, transparent, var(--accent-glow), transparent, var(--accent-glow), transparent);
+      animation: rotate-border 8s linear infinite;
+      opacity: 0.3;
+    }
+    @keyframes rotate-border { to { transform: rotate(360deg); } }
+    .olympiad-content { position: relative; z-index: 1; }
+    .olympiad-emoji { font-size: 64px; margin-bottom: 20px; }
+    .olympiad-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px; font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .olympiad-title .accent { color: var(--accent); }
+    .olympiad-desc {
+      color: var(--text2); font-size: 16px;
+      line-height: 1.7; margin-bottom: 28px;
+      max-width: 550px; margin-left: auto; margin-right: auto;
+    }
+    .olympiad-features {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: 16px;
+      margin-bottom: 32px;
+    }
+    .olympiad-feat {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 14px; color: var(--text2);
+    }
+
+    /* TIKTOK SECTION */
+    .tiktok-section {
+      background: var(--bg2);
+    }
+    .tiktok-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .tiktok-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .tiktok-card:hover {
+      border-color: #ff0050;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(255,0,80,0.15);
+    }
+    .tiktok-icon {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #25f4ee, #fe2c55);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .tiktok-icon svg { width: 32px; height: 32px; fill: #fff; }
+    .tiktok-user {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px; font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .tiktok-label {
+      font-size: 13px; color: var(--text3);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: linear-gradient(135deg, rgba(16,185,129,0.1), var(--bg));
+      position: relative;
+    }
+    .cta-card {
+      max-width: 700px; margin: 0 auto;
+      text-align: center;
+    }
+    .cta-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700; margin-bottom: 16px;
+    }
+    .cta-title .accent { color: var(--accent); }
+    .cta-desc {
+      color: var(--text2); font-size: 18px;
+      line-height: 1.7; margin-bottom: 32px;
+    }
+    .cta-phone {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px; color: var(--accent);
+      margin-bottom: 24px; letter-spacing: 2px;
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 60px 24px 30px;
+      border-top: 1px solid var(--border);
+      background: var(--bg2);
+    }
+    .footer-container {
+      max-width: 1200px; margin: 0 auto;
+    }
+    .footer-top {
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap;
+      gap: 40px; margin-bottom: 40px;
+    }
+    .footer-brand {
+      max-width: 300px;
+    }
+    .footer-logo {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 12px;
+    }
+    .footer-logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700; font-size: 18px; color: #fff;
+    }
+    .footer-logo-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px; font-weight: 700;
+    }
+    .footer-logo-text span { color: var(--accent); }
+    .footer-brand p {
+      color: var(--text3); font-size: 14px; line-height: 1.7;
+    }
+    .footer-links h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px; font-weight: 600;
+      margin-bottom: 16px; color: var(--text);
+    }
+    .footer-links a {
+      display: block; color: var(--text3);
+      text-decoration: none; font-size: 14px;
+      padding: 4px 0; transition: color 0.3s ease;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy {
+      color: var(--text3); font-size: 13px;
+    }
+    .footer-jimbra {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--text3);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .footer-jimbra:hover { color: var(--accent); }
+    .footer-jimbra span { color: #10B981; font-weight: 600; }
+    .footer-jimbra-logo {
+      height: 22px; width: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0.85;
+    }
+    .footer-jimbra:hover .footer-jimbra-logo {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      z-index: 900;
+      width: 60px; height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s ease;
+      animation: wa-pulse 2s ease-in-out infinite;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37,211,102,0.6);
+    }
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+    }
+    .whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+
+    /* INSTALL BANNER */
+    .install-banner {
+      position: fixed; bottom: 100px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--bg2);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+      padding: 16px 24px;
+      display: none; align-items: center; gap: 16px;
+      z-index: 800;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      max-width: 360px; width: calc(100% - 48px);
+    }
+    .install-banner.show { display: flex; }
+    .install-banner-text { flex: 1; }
+    .install-banner-text p { font-size: 14px; font-weight: 600; }
+    .install-banner-text small { font-size: 12px; color: var(--text3); }
+    .install-btn {
+      background: var(--accent); color: #000;
+      border: none; padding: 8px 16px;
+      border-radius: 8px; font-weight: 700;
+      font-size: 14px; cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .install-btn:hover { background: var(--accent-hover); }
+    .install-close {
+      background: none; border: none;
+      color: var(--text3); font-size: 18px;
+      cursor: pointer; padding: 4px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-subtitle { margin: 0 auto 32px; }
+      .hero-buttons { justify-content: center; }
+      .hero-stats { justify-content: center; }
+      .hero-image { margin-top: 40px; }
+      .tiers-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .hero-jersey-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-jersey-card img { height: 110px; }
+      .teams-grid { grid-template-columns: repeat(2, 1fr); }
+      .clubs-grid { grid-template-columns: 1fr; }
+      .tiktok-grid { grid-template-columns: 1fr; }
+      .olympiad-card { padding: 40px 24px; }
+      .hero-stats { flex-direction: column; gap: 16px; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">LM</div>
+      <div class="nav-logo-text">IMPORT <span>LM SPORT</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#mundial">Mundial</a></li>
+      <li><a href="#calidades">Calidades</a></li>
+      <li><a href="#selecciones">Selecciones</a></li>
+      <li><a href="#clubes">Clubes</a></li>
+      <li><a href="#olimpiadas">Olimpiadas</a></li>
+      <li><a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas%20%F0%9F%8F%86" class="nav-cta" target="_blank">WhatsApp</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#mundial" onclick="closeMobile()">Mundial</a>
+    <a href="#calidades" onclick="closeMobile()">Calidades</a>
+    <a href="#selecciones" onclick="closeMobile()">Selecciones</a>
+    <a href="#clubes" onclick="closeMobile()">Clubes</a>
+    <a href="#olimpiadas" onclick="closeMobile()">Olimpiadas</a>
+    <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas%20%F0%9F%8F%86" target="_blank" style="color: var(--accent);">WhatsApp</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-bg-glow2"></div>
+    <div class="hero-container">
+      <div>
+        <div class="hero-badge reveal">
+          <div class="hero-badge-dot"></div>
+          Envíos a todo Ecuador
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          CAMISETAS DE<br>FÚTBOL<br><span class="accent">PREMIUM</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          Las mejores camisetas de selecciones y clubes europeos. Tres niveles de calidad para cada presupuesto. Vende con Import LM Sport y gana comisión.
+        </p>
+        <div class="hero-buttons reveal reveal-delay-3">
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20comprar%20camisetas%20%F0%9F%8F%86" class="btn-primary" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedir por WhatsApp
+          </a>
+          <a href="#calidades" class="btn-secondary">
+            Ver Calidades
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <div class="hero-stat-num">3</div>
+            <div class="hero-stat-label">Niveles de calidad</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">10+</div>
+            <div class="hero-stat-label">Selecciones</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Satisfacción</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image reveal reveal-delay-3">
+        <div class="hero-jersey-grid">
+          <div class="hero-jersey-card">
+            <img src="/images/ecuador.png" alt="Ecuador" loading="lazy">
+            <p>Ecuador</p>
+          </div>
+          <div class="hero-jersey-card">
+            <img src="/images/argentina.png" alt="Argentina" loading="lazy">
+            <p>Argentina</p>
+          </div>
+          <div class="hero-jersey-card">
+            <img src="/images/realmadrid.png" alt="Real Madrid" loading="lazy">
+            <p>Real Madrid</p>
+          </div>
+          <div class="hero-jersey-card">
+            <img src="/images/brasil.png" alt="Brasil" loading="lazy">
+            <p>Brasil</p>
+          </div>
+          <div class="hero-jersey-card">
+            <img src="/images/barcelona.png" alt="Barcelona FC" loading="lazy">
+            <p>Barcelona FC</p>
+          </div>
+          <div class="hero-jersey-card">
+            <img src="/images/psg.png" alt="PSG" loading="lazy">
+            <p>PSG</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUNDIAL SECTION -->
+  <section class="mundial-section" id="mundial">
+    <div class="mundial-container">
+      <div class="mundial-header reveal">
+        <div class="mundial-badge">
+          <span class="mundial-flag-emoji">🇪🇨</span> MUNDIAL 2026
+        </div>
+        <h2 class="mundial-title">ESTAMOS EN EL <span class="accent">MUNDIAL</span></h2>
+        <p class="mundial-subtitle">La Tri clasificó al Mundial 2026. Pedí tu camiseta de Ecuador antes del primer partido y viví el Mundial con la camiseta puesta. 🔥</p>
+      </div>
+      <div class="mundial-matches">
+        <!-- Partido 1: HOY -->
+        <div class="match-card today reveal reveal-delay-1">
+          <div class="match-today-badge">⚽ ¡HOY JUEGA ECUADOR!</div>
+          <div class="match-date">📅 SÁB 20 JUN</div>
+          <div class="match-teams">
+            <span class="match-ecuador">ECUADOR 🇪🇨</span>
+            <span class="match-vs">VS</span>
+            <span>CURAZAO 🇨🇼</span>
+          </div>
+          <div class="match-info">
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Kansas City, EE.UU.
+            </div>
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              21:00 hora Ecuador
+            </div>
+          </div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20hoy%20juega%20Ecuador%2C%20quiero%20pedir%20la%20camiseta%20de%20La%20Tri%20%E2%9A%BD%F0%9F%87%AA%F0%9F%87%A8" target="_blank" class="match-cta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Pedir camiseta de Ecuador
+          </a>
+        </div>
+        <!-- Partido 2 -->
+        <div class="match-card reveal reveal-delay-2">
+          <div class="match-date">📅 JUE 25 JUN</div>
+          <div class="match-teams">
+            <span class="match-ecuador">ECUADOR 🇪🇨</span>
+            <span class="match-vs">VS</span>
+            <span>ALEMANIA 🇩🇪</span>
+          </div>
+          <div class="match-info">
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Estadio por confirmar
+            </div>
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              15:00 hora Ecuador
+            </div>
+          </div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Ecuador%20para%20el%20partido%20vs%20Alemania%20%E2%9A%BD%F0%9F%87%AA%F0%9F%87%A8" target="_blank" class="match-cta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Pedir camiseta de Ecuador
+          </a>
+        </div>
+        <!-- Partido 3 -->
+        <div class="match-card reveal reveal-delay-3">
+          <div class="match-date">📅 MIÉ 30 JUN</div>
+          <div class="match-teams">
+            <span class="match-ecuador">ECUADOR 🇪🇨</span>
+            <span class="match-vs">VS</span>
+            <span>SENEGAL 🇸🇳</span>
+          </div>
+          <div class="match-info">
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Houston, EE.UU.
+            </div>
+            <div class="match-info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              19:00 hora Ecuador
+            </div>
+          </div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Ecuador%20para%20el%20partido%20vs%20Senegal%20%E2%9A%BD%F0%9F%87%AA%F0%9F%87%A8" target="_blank" class="match-cta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            Pedir camiseta de Ecuador
+          </a>
+        </div>
+      </div>
+      <div class="mundial-cta-bottom reveal reveal-delay-4">
+        <p>🇪🇨 Llevá puesto los colores de La Tri en cada partido. Stock limitado, pilas. 🇪🇨</p>
+        <a href="https://wa.me/593963647238?text=Henry%2C%20quiero%20pedir%20la%20camiseta%20de%20Ecuador%20para%20el%20Mundial%20%E2%9A%BD%F0%9F%87%AA%F0%9F%87%A8" target="_blank" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Pedir camiseta de La Tri por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALIDADES -->
+  <section class="section" id="calidades">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Calidades</div>
+        <h2 class="section-title reveal reveal-delay-1">TRES NIVELES DE <span class="accent">CALIDAD</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Elige la calidad que mejor se adapte a tu necesidad. Desde réplicas exactas hasta opciones para equipos completos.</p>
+      </div>
+      <div class="tiers-grid">
+        <!-- 1:1 -->
+        <div class="tier-card reveal reveal-delay-1">
+          <div class="tier-badge">PREMIUM</div>
+          <div class="tier-icon gold">👑</div>
+          <div class="tier-name">1:1</div>
+          <div class="tier-tagline">Réplica Exacta</div>
+          <div class="tier-desc">La máxima calidad. Réplica idéntica a la original con los mismos materiales, bordados y detalles. Indistinguible de la camiseta oficial.</div>
+          <ul class="tier-features">
+            <li>Materiales idénticos al original</li>
+            <li>Bordados y parches oficiales</li>
+            <li>Etiquetas y detalles premium</li>
+            <li>Calidad de tienda oficial</li>
+          </ul>
+          <div class="tier-price">Desde <strong>$35</strong></div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20de%20camisetas%201%3A1%20%F0%9F%91%91" class="btn-primary" target="_blank" style="width:100%;justify-content:center;font-size:14px;padding:12px;">
+            Pedir 1:1
+          </a>
+        </div>
+        <!-- AAA -->
+        <div class="tier-card featured reveal reveal-delay-2">
+          <div class="tier-badge">MÁS VENDIDA</div>
+          <div class="tier-icon silver">⭐</div>
+          <div class="tier-name">AAA</div>
+          <div class="tier-tagline">Alta Calidad</div>
+          <div class="tier-desc">Excelente relación calidad-precio. Materiales de alta gama con acabados profesionales. Perfecta para uso diario y partidos.</div>
+          <ul class="tier-features">
+            <li>Alta calidad de materiales</li>
+            <li>Acabados profesionales</li>
+            <li>Resistente al lavado</li>
+            <li>Ideal para uso diario</li>
+          </ul>
+          <div class="tier-price">Desde <strong>$25</strong></div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20de%20camisetas%20AAA%20%E2%AD%90" class="btn-primary" target="_blank" style="width:100%;justify-content:center;font-size:14px;padding:12px;">
+            Pedir AAA
+          </a>
+        </div>
+        <!-- Sublimada -->
+        <div class="tier-card reveal reveal-delay-3">
+          <div class="tier-icon bronze">🎯</div>
+          <div class="tier-name">Sublimada</div>
+          <div class="tier-tagline">Para Equipos y Colegios</div>
+          <div class="tier-desc">La opción ideal para pedidos al por mayor. Perfecta para olimpiadas escolares, equipos barriales y torneos locales con personalización incluida.</div>
+          <ul class="tier-features">
+            <li>Personalización incluida</li>
+            <li>Números y nombres</li>
+            <li>Pedidos al por mayor</li>
+            <li>Ideal para colegios y equipos</li>
+          </ul>
+          <div class="tier-price">Desde <strong>$15</strong></div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20de%20camisetas%20Sublimadas%20%F0%9F%8E%AF" class="btn-primary" target="_blank" style="width:100%;justify-content:center;font-size:14px;padding:12px;">
+            Pedir Sublimada
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECCIONES -->
+  <section class="section" id="selecciones" style="background: var(--bg2);">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Selecciones</div>
+        <h2 class="section-title reveal reveal-delay-1">CAMISETAS DE <span class="accent">SELECCIONES</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Las camisetas de las selecciones más populares del mundo. Disponibles en calidad 1:1 y AAA.</p>
+      </div>
+      <div class="teams-grid">
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Ecuador%20%F0%9F%87%AA%F0%9F%87%A8" target="_blank" class="team-card reveal reveal-delay-1">
+          <img src="/images/ecuador.png" alt="Ecuador" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">Ecuador 🇪🇨</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Argentina%20%F0%9F%87%A6%F0%9F%87%B7" target="_blank" class="team-card reveal reveal-delay-2">
+          <img src="/images/argentina.png" alt="Argentina" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">Argentina 🇦🇷</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Brasil%20%F0%9F%87%A7%F0%9F%87%B7" target="_blank" class="team-card reveal reveal-delay-3">
+          <img src="/images/brasil.png" alt="Brasil" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">Brasil 🇧🇷</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Colombia%20%F0%9F%87%A8%F0%9F%87%B4" target="_blank" class="team-card reveal reveal-delay-4">
+          <img src="/images/colombia.png" alt="Colombia" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">Colombia 🇨🇴</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20M%C3%A9xico%20%F0%9F%87%B2%F0%9F%87%BD" target="_blank" class="team-card reveal reveal-delay-5">
+          <img src="/images/mexico.png" alt="México" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">México 🇲🇽</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20de%20Espa%C3%B1a%20%F0%9F%87%AA%F0%9F%87%B8" target="_blank" class="team-card reveal">
+          <img src="/images/espana.png" alt="España" class="team-card-img" loading="lazy">
+          <div class="team-card-body">
+            <div class="team-card-name">España 🇪🇸</div>
+            <div class="team-card-type">Disponible 1:1 / AAA</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLUBES -->
+  <section class="section" id="clubes">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Clubes</div>
+        <h2 class="section-title reveal reveal-delay-1">CAMISETAS DE <span class="accent">CLUBES</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Los clubes más grandes de Europa y Ecuador. Calidad premium para los hinchas más exigentes.</p>
+      </div>
+      <div class="clubs-grid">
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20del%20Real%20Madrid%20%E2%9A%AA" target="_blank" class="club-card reveal reveal-delay-1">
+          <img src="/images/realmadrid.png" alt="Real Madrid" class="club-card-img" loading="lazy">
+          <div class="club-card-body">
+            <div class="club-card-league">La Liga</div>
+            <div class="club-card-name">Real Madrid ⚪</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20del%20Barcelona%20FC%20%F0%9F%94%B5%F0%9F%94%B4" target="_blank" class="club-card reveal reveal-delay-2">
+          <img src="/images/barcelona.png" alt="Barcelona FC" class="club-card-img" loading="lazy">
+          <div class="club-card-body">
+            <div class="club-card-league">La Liga</div>
+            <div class="club-card-name">Barcelona FC 🔵🔴</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20del%20PSG%20%F0%9F%94%B5%E2%9D%A4" target="_blank" class="club-card reveal reveal-delay-3">
+          <img src="/images/psg.png" alt="PSG" class="club-card-img" loading="lazy">
+          <div class="club-card-body">
+            <div class="club-card-league">Ligue 1</div>
+            <div class="club-card-name">PSG 🔵❤</div>
+          </div>
+        </a>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20la%20camiseta%20del%20Barcelona%20SC%20%F0%9F%92%9B%E2%9A%AB" target="_blank" class="club-card reveal reveal-delay-4">
+          <img src="/images/barcelonasc.png" alt="Barcelona SC" class="club-card-img" loading="lazy">
+          <div class="club-card-body">
+            <div class="club-card-league">LigaPro Ecuador</div>
+            <div class="club-card-name">Barcelona SC 💛⚫</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OLIMPIADAS ESCOLARES -->
+  <section class="section olympiad-section" id="olimpiadas">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Olimpiadas</div>
+        <h2 class="section-title reveal reveal-delay-1">UNIFORMES PARA <span class="accent">OLIMPIADAS</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Camisetas sublimadas personalizadas para olimpiadas escolares, intercolegiales y torneos deportivos.</p>
+      </div>
+      <div class="olympiad-card reveal reveal-delay-2">
+        <div class="olympiad-content">
+          <div class="olympiad-emoji">🏅</div>
+          <h3 class="olympiad-title">OLIMPIADAS <span class="accent">ESCOLARES</span></h3>
+          <p class="olympiad-desc">Equipá a tu colegio o equipo con uniformes sublimados de alta calidad. Personalización completa: nombres, números, escudos y colores institucionales. Precios especiales por cantidad.</p>
+          <div class="olympiad-features">
+            <span class="olympiad-feat">✏️ Nombres y números</span>
+            <span class="olympiad-feat">🎨 Colores personalizados</span>
+            <span class="olympiad-feat">🏛️ Escudos institucionales</span>
+            <span class="olympiad-feat">📦 Pedidos al por mayor</span>
+            <span class="olympiad-feat">💰 Precios especiales</span>
+          </div>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20uniformes%20para%20olimpiadas%20escolares%20%F0%9F%8F%85" class="btn-primary" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Cotizar Olimpiadas
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIKTOK -->
+  <section class="section tiktok-section" id="tiktok">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Redes Sociales</div>
+        <h2 class="section-title reveal reveal-delay-1">SÍGUENOS EN <span class="accent">TIKTOK</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Entérate de los nuevos ingresos, ofertas exclusivas y contenido de camisetas en nuestros TikToks.</p>
+      </div>
+      <div class="tiktok-grid">
+        <a href="https://www.tiktok.com/@henrybarce13" target="_blank" class="tiktok-card reveal reveal-delay-1">
+          <div class="tiktok-icon">
+            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.34a8.27 8.27 0 004.76 1.5V7.39a4.85 4.85 0 01-1-.7z"/></svg>
+          </div>
+          <div class="tiktok-user">@henrybarce13</div>
+          <div class="tiktok-label">Henry — Personal</div>
+        </a>
+        <a href="https://www.tiktok.com/@importlmsport" target="_blank" class="tiktok-card reveal reveal-delay-2">
+          <div class="tiktok-icon">
+            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.34a8.27 8.27 0 004.76 1.5V7.39a4.85 4.85 0 01-1-.7z"/></svg>
+          </div>
+          <div class="tiktok-user">@importlmsport</div>
+          <div class="tiktok-label">Import LM Sport — Negocio</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section" id="contacto">
+    <div class="section-container">
+      <div class="cta-card reveal">
+        <h2 class="cta-title">¿LISTO PARA <span class="accent">COMPRAR</span>?</h2>
+        <p class="cta-desc">Escríbele a Henry por WhatsApp y pide tu camiseta hoy. Envíos a todo el Ecuador. Atención rápida y personalizada.</p>
+        <div class="cta-phone">📞 0963647238</div>
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20comprar%20camisetas%20de%20Henry%20Sport%20%F0%9F%8F%86" class="btn-primary" target="_blank" style="font-size:18px; padding: 16px 40px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir a Henry por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">LM</div>
+            <div class="footer-logo-text">IMPORT <span>LM SPORT</span></div>
+          </div>
+          <p>Las mejores camisetas de fútbol del mercado. Tres niveles de calidad para cada necesidad. Envíos a todo el Ecuador.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#mundial">Mundial</a>
+          <a href="#calidades">Calidades</a>
+          <a href="#selecciones">Selecciones</a>
+          <a href="#clubes">Clubes</a>
+          <a href="#olimpiadas">Olimpiadas</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>TikTok</h4>
+          <a href="https://www.tiktok.com/@henrybarce13" target="_blank">@henrybarce13</a>
+          <a href="https://www.tiktok.com/@importlmsport" target="_blank">@importlmsport</a>
+        </div>
+        <div class="footer-links">
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas" target="_blank">0963647238</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Import LM Sport. Todos los derechos reservados.</div>
+        <a href="https://jimbra.net" target="_blank" class="footer-jimbra">
+          Desarrollado por <span>Jimbra</span>
+          <img src="/images/jimbra-logo-sm.png" alt="Jimbra" class="footer-jimbra-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas%20de%20Henry%20Sport%20%F0%9F%8F%86" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- PWA INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-banner-text">
+      <p>Instalar Import LM Sport</p>
+      <small>Agrega la app a tu pantalla de inicio</small>
+    </div>
+    <button class="install-btn" id="installBtn">Instalar</button>
+    <button class="install-close" id="installClose">&times;</button>
+  </div>
+
+  <script>
+    // PRELOADER
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').classList.add('hide');
+      }, 600);
+    });
+
+    // NAVBAR SCROLL
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // HAMBURGER MENU
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    function closeMobile() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // SCROLL REVEAL
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // PWA INSTALL
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      setTimeout(() => {
+        document.getElementById('installBanner').classList.add('show');
+      }, 3000);
+    });
+    document.getElementById('installBtn').addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      document.getElementById('installBanner').classList.remove('show');
+    });
+    document.getElementById('installClose').addEventListener('click', () => {
+      document.getElementById('installBanner').classList.remove('show');
+    });
+
+    // SERVICE WORKER
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
