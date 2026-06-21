@@ -6,36 +6,39 @@
   <title>Import LM Sport | Camisetas de Fútbol Premium — Calidad 1:1, AAA y Sublimada</title>
   <meta name="description" content="Camisetas de fútbol del Mundial y clubes europeos. Calidad 1:1, AAA y Sublimada. Envíos a todo el Ecuador. WhatsApp: 0963647238 — Import LM Sport">
   <meta name="keywords" content="camisetas, fútbol, mundial, 1:1, AAA, sublimada, Ecuador, Real Madrid, Barcelona, PSG, selecciones, Import LM Sport">
-  <meta name="theme-color" content="#10B981">
+  <meta name="theme-color" content="#0a0805">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta property="og:title" content="Import LM Sport | Camisetas de Fútbol Premium">
   <meta property="og:description" content="Las mejores camisetas de fútbol. Calidad 1:1, AAA y Sublimada. Envíos a todo Ecuador.">
   <meta property="og:type" content="website">
   <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="/images/icon-512.png" type="image/png">
-  <link rel="apple-touch-icon" href="/images/icon-512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #050a05;
-      --bg2: #0c1a10;
-      --bg3: #0d140d;
-      --accent: #10B981;
-      --accent-hover: #34d399;
-      --accent-dark: #059669;
-      --accent-glow: rgba(16,185,129,0.4);
-      --gold: #fbbf24;
+      /* ELEGANT GOLD PALETTE — fondo café-negro cálido, acento dorado champagne */
+      --bg: #0a0805;
+      --bg2: #15110a;
+      --bg3: #1c1610;
+      --accent: #f5c542;          /* dorado champagne principal */
+      --accent-hover: #ffd966;    /* dorado más claro en hover */
+      --accent-dark: #c9a236;     /* dorado oscuro para gradientes */
+      --accent-glow: rgba(245,197,66,0.4);
+      --gold: #f5c542;
       --amber: #f59e0b;
       --blue: #3b82f6;
-      --text: #f0fdf4;
-      --text2: #b8d4c8;
-      --text3: #7da693;
-      --border: rgba(16,185,129,0.2);
-      --glass: rgba(16,185,129,0.06);
-      --glass-border: rgba(16,185,129,0.15);
+      --text: #fdf6e3;            /* crema cálida para texto principal */
+      --text2: #c9b896;           /* beige para texto secundario */
+      --text3: #8a7a5c;           /* dorado apagado para texto terciario */
+      --border: rgba(245,197,66,0.22);
+      --glass: rgba(245,197,66,0.06);
+      --glass-border: rgba(245,197,66,0.16);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -70,26 +73,29 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       padding: 0 24px; height: 72px;
       display: flex; align-items: center; justify-content: space-between;
-      background: rgba(10,15,10,0.8);
+      background: rgba(15,11,6,0.8);
       backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
       transition: all 0.3s ease;
     }
     .navbar.scrolled {
-      background: rgba(10,15,10,0.95);
+      background: rgba(15,11,6,0.95);
       box-shadow: 0 4px 30px rgba(0,0,0,0.5);
     }
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none;
     }
-    .nav-logo-icon {
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700; font-size: 20px; color: #fff;
+    .nav-logo-img {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 2px rgba(251,191,36,0.35), 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .nav-logo:hover .nav-logo-img {
+      transform: scale(1.06) rotate(4deg);
+      box-shadow: 0 0 0 2px rgba(251,191,36,0.7), 0 6px 18px rgba(0,0,0,0.7);
     }
     .nav-logo-text {
       font-family: 'Oswald', sans-serif;
@@ -97,7 +103,7 @@
       color: var(--text);
       letter-spacing: 1px;
     }
-    .nav-logo-text span { color: var(--accent); }
+    .nav-logo-text span { color: var(--gold); }
     .nav-links {
       display: flex; align-items: center; gap: 28px;
       list-style: none;
@@ -141,7 +147,7 @@
     .mobile-menu {
       display: none;
       position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
-      background: rgba(10,15,10,0.98);
+      background: rgba(15,11,6,0.98);
       backdrop-filter: blur(20px);
       flex-direction: column; align-items: center; justify-content: center; gap: 24px;
       z-index: 999;
@@ -174,7 +180,7 @@
     .hero-bg-glow2 {
       position: absolute; bottom: -100px; left: -100px;
       width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(16,185,129,0.15), transparent 70%);
+      background: radial-gradient(circle, rgba(245,197,66,0.15), transparent 70%);
       pointer-events: none;
       animation: pulse-glow 5s ease-in-out infinite 1s;
     }
@@ -273,7 +279,7 @@
     .hero-jersey-card:hover {
       border-color: var(--accent);
       transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 8px 30px rgba(16,185,129,0.15);
+      box-shadow: 0 8px 30px rgba(245,197,66,0.15);
     }
     .hero-jersey-card img {
       width: 100%; height: 140px; object-fit: cover;
@@ -336,7 +342,7 @@
     .mundial-section {
       padding: 80px 24px 100px;
       position: relative;
-      background: radial-gradient(ellipse at top, rgba(16,185,129,0.08), transparent 60%), var(--bg);
+      background: radial-gradient(ellipse at top, rgba(245,197,66,0.08), transparent 60%), var(--bg);
       overflow: hidden;
     }
     .mundial-section::before {
@@ -344,7 +350,7 @@
       position: absolute;
       top: -50px; right: -50px;
       width: 400px; height: 400px;
-      background: radial-gradient(circle, rgba(16,185,129,0.15), transparent 70%);
+      background: radial-gradient(circle, rgba(245,197,66,0.15), transparent 70%);
       pointer-events: none;
       animation: pulse-glow 5s ease-in-out infinite;
     }
@@ -362,12 +368,12 @@
       border-radius: 50px; font-weight: 700;
       font-size: 13px; letter-spacing: 1px;
       margin-bottom: 20px; text-transform: uppercase;
-      box-shadow: 0 4px 20px rgba(16,185,129,0.4);
+      box-shadow: 0 4px 20px rgba(245,197,66,0.4);
       animation: badge-pulse 2s ease-in-out infinite;
     }
     @keyframes badge-pulse {
-      0%, 100% { box-shadow: 0 4px 20px rgba(16,185,129,0.4); }
-      50% { box-shadow: 0 4px 40px rgba(16,185,129,0.8); }
+      0%, 100% { box-shadow: 0 4px 20px rgba(245,197,66,0.4); }
+      50% { box-shadow: 0 4px 40px rgba(245,197,66,0.8); }
     }
     .mundial-title {
       font-family: 'Oswald', sans-serif;
@@ -408,11 +414,11 @@
     .match-card:hover {
       border-color: var(--accent);
       transform: translateY(-6px);
-      box-shadow: 0 16px 50px rgba(16,185,129,0.18);
+      box-shadow: 0 16px 50px rgba(245,197,66,0.18);
     }
     .match-card.today {
       border-color: var(--accent);
-      background: linear-gradient(180deg, rgba(16,185,129,0.1), var(--bg2));
+      background: linear-gradient(180deg, rgba(245,197,66,0.1), var(--bg2));
     }
     .match-today-badge {
       position: absolute; top: 0; left: 0; right: 0;
@@ -473,7 +479,7 @@
     .match-cta:hover {
       background: var(--accent-hover);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(16,185,129,0.4);
+      box-shadow: 0 8px 24px rgba(245,197,66,0.4);
     }
     .match-cta svg { width: 18px; height: 18px; }
     .mundial-cta-bottom {
@@ -513,11 +519,11 @@
     .tier-card:hover {
       border-color: var(--accent);
       transform: translateY(-6px);
-      box-shadow: 0 20px 60px rgba(16,185,129,0.12);
+      box-shadow: 0 20px 60px rgba(245,197,66,0.12);
     }
     .tier-card.featured {
       border-color: var(--accent);
-      background: linear-gradient(180deg, rgba(16,185,129,0.08), var(--bg2));
+      background: linear-gradient(180deg, rgba(245,197,66,0.08), var(--bg2));
     }
     .tier-card.featured::before { transform: scaleX(1); }
     .tier-badge {
@@ -534,7 +540,7 @@
       font-size: 28px; margin-bottom: 20px;
     }
     .tier-icon.gold { background: rgba(245,158,11,0.15); }
-    .tier-icon.silver { background: rgba(16,185,129,0.15); }
+    .tier-icon.silver { background: rgba(245,197,66,0.15); }
     .tier-icon.bronze { background: rgba(59,130,246,0.15); }
     .tier-name {
       font-family: 'Oswald', sans-serif;
@@ -590,7 +596,7 @@
     .team-card:hover {
       border-color: var(--accent);
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(16,185,129,0.12);
+      box-shadow: 0 12px 40px rgba(245,197,66,0.12);
     }
     .team-card-img {
       width: 100%; height: 180px;
@@ -629,7 +635,7 @@
     .club-card:hover {
       border-color: var(--accent);
       transform: translateY(-6px);
-      box-shadow: 0 16px 50px rgba(16,185,129,0.12);
+      box-shadow: 0 16px 50px rgba(245,197,66,0.12);
     }
     .club-card-img {
       width: 100%; height: 200px;
@@ -744,7 +750,7 @@
 
     /* CTA SECTION */
     .cta-section {
-      background: linear-gradient(135deg, rgba(16,185,129,0.1), var(--bg));
+      background: linear-gradient(135deg, rgba(245,197,66,0.1), var(--bg));
       position: relative;
     }
     .cta-card {
@@ -788,19 +794,17 @@
       display: flex; align-items: center; gap: 10px;
       margin-bottom: 12px;
     }
-    .footer-logo-icon {
-      width: 36px; height: 36px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700; font-size: 18px; color: #fff;
+    .footer-logo-img {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 0 2px rgba(251,191,36,0.35), 0 4px 14px rgba(0,0,0,0.5);
     }
     .footer-logo-text {
       font-family: 'Oswald', sans-serif;
       font-size: 20px; font-weight: 700;
     }
-    .footer-logo-text span { color: var(--accent); }
+    .footer-logo-text span { color: var(--gold); }
     .footer-brand p {
       color: var(--text3); font-size: 14px; line-height: 1.7;
     }
@@ -831,7 +835,7 @@
       transition: all 0.3s ease;
     }
     .footer-jimbra:hover { color: var(--accent); }
-    .footer-jimbra span { color: #10B981; font-weight: 600; }
+    .footer-jimbra span { color: var(--accent); font-weight: 600; }
     .footer-jimbra-logo {
       height: 22px; width: auto;
       transition: transform 0.3s ease, opacity 0.3s ease;
@@ -840,6 +844,97 @@
     .footer-jimbra:hover .footer-jimbra-logo {
       transform: scale(1.1);
       opacity: 1;
+    }
+
+    /* CATALOG SECTION */
+    .catalog-section {
+      background: var(--bg);
+      padding: 100px 0;
+      position: relative;
+    }
+    .catalog-container {
+      max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    }
+    .catalog-card {
+      background: linear-gradient(135deg, var(--bg2), var(--bg3));
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    .catalog-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .catalog-image-wrap {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+    }
+    .catalog-image {
+      width: 100%; display: block;
+      transition: transform 0.6s ease;
+    }
+    .catalog-card:hover .catalog-image {
+      transform: scale(1.03);
+    }
+    .catalog-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(10,8,5,0.92) 100%);
+      display: flex; align-items: flex-end; justify-content: center;
+      padding: 24px;
+      pointer-events: none;
+    }
+    .catalog-overlay-badge {
+      background: var(--gold);
+      color: #1a1a1a;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .catalog-content {
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+    }
+    .catalog-text h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px; font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .catalog-text h3 .accent { color: var(--gold); }
+    .catalog-text p {
+      color: var(--text2); font-size: 15px; line-height: 1.7;
+      max-width: 600px;
+    }
+    .catalog-cta {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 8px;
+    }
+    .catalog-count {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px; font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .catalog-count-label {
+      font-size: 12px; color: var(--text3);
+      text-transform: uppercase; letter-spacing: 2px;
+    }
+    @media (max-width: 768px) {
+      .catalog-content { grid-template-columns: 1fr; gap: 24px; padding: 24px; }
+      .catalog-cta { flex-direction: row; gap: 16px; justify-content: flex-start; }
+      .catalog-text h3 { font-size: 22px; }
     }
 
     /* FLOATING WHATSAPP */
@@ -933,7 +1028,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">LM</div>
+      <img src="/images/logo-import-lm-sport.jpg" alt="Import LM Sport" class="nav-logo-img">
       <div class="nav-logo-text">IMPORT <span>LM SPORT</span></div>
     </a>
     <ul class="nav-links">
@@ -1285,6 +1380,43 @@
     </div>
   </section>
 
+  <!-- CATALOG COMPLETO -->
+  <section class="section catalog-section" id="catalogo">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-label reveal">Catálogo</div>
+        <h2 class="section-title reveal reveal-delay-1">CATÁLOGO <span class="accent">COMPLETO</span></h2>
+        <p class="section-desc reveal reveal-delay-2">Mira una muestra de las camisetas disponibles. Selecciones nacionales, clubes europeos y modelos retro. Todo en tres calidades: 1:1, AAA y Sublimada.</p>
+      </div>
+    </div>
+    <div class="catalog-container reveal reveal-delay-2">
+      <div class="catalog-card">
+        <div class="catalog-image-wrap">
+          <img src="/images/catalogo-completo.jpg" alt="Catálogo completo de camisetas Import LM Sport" class="catalog-image">
+          <div class="catalog-overlay">
+            <div class="catalog-overlay-badge">Muestra disponible</div>
+          </div>
+        </div>
+        <div class="catalog-content">
+          <div class="catalog-text">
+            <h3>MÁS DE <span class="accent">12 MODELOS</span> DISPONIBLES</h3>
+            <p>Real Madrid, Barcelona FC, PSG, Brasil, Argentina, Ecuador, Colombia, México, España y más. Cada modelo disponible en calidad 1:1 (réplica exacta), AAA (alta calidad) y Sublimada (económica para olimpiadas). Pregunta por el tuyo por WhatsApp.</p>
+          </div>
+          <div class="catalog-cta">
+            <div class="catalog-count">12+</div>
+            <div class="catalog-count-label">Modelos</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20vi%20el%20cat%C3%A1logo%20y%20quiero%20saber%20qu%C3%A9%20modelos%20tienes%20disponibles%20%F0%9F%8F%86" class="btn-primary" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir catálogo completo por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- OLIMPIADAS ESCOLARES -->
   <section class="section olympiad-section" id="olimpiadas">
     <div class="section-container">
@@ -1348,7 +1480,7 @@
         <h2 class="cta-title">¿LISTO PARA <span class="accent">COMPRAR</span>?</h2>
         <p class="cta-desc">Escríbele a Henry por WhatsApp y pide tu camiseta hoy. Envíos a todo el Ecuador. Atención rápida y personalizada.</p>
         <div class="cta-phone">📞 0963647238</div>
-        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20comprar%20camisetas%20de%20Henry%20Sport%20%F0%9F%8F%86" class="btn-primary" target="_blank" style="font-size:18px; padding: 16px 40px;">
+        <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20comprar%20camisetas%20de%20Import%20LM%20Sport%20%F0%9F%8F%86" class="btn-primary" target="_blank" style="font-size:18px; padding: 16px 40px;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Escribir a Henry por WhatsApp
         </a>
@@ -1362,7 +1494,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <div class="footer-logo-icon">LM</div>
+            <img src="/images/logo-import-lm-sport.jpg" alt="Import LM Sport" class="footer-logo-img">
             <div class="footer-logo-text">IMPORT <span>LM SPORT</span></div>
           </div>
           <p>Las mejores camisetas de fútbol del mercado. Tres niveles de calidad para cada necesidad. Envíos a todo el Ecuador.</p>
@@ -1397,7 +1529,7 @@
   </footer>
 
   <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas%20de%20Henry%20Sport%20%F0%9F%8F%86" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <a href="https://wa.me/593963647238?text=Hola%20Henry%2C%20quiero%20info%20sobre%20camisetas%20de%20Import%20LM%20Sport%20%F0%9F%8F%86" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
